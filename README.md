@@ -1,7 +1,7 @@
 ---
 title: Syntax Sneakers
 emoji: 👟
-colorFrom: cyan
+colorFrom: blue
 colorTo: purple
 sdk: static
 sdk_version: 1.0
