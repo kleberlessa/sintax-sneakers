@@ -1,0 +1,122 @@
+/**
+ * SYNTAX SNEAKERS - Global Styles
+ * Foco: Performance, Acessibilidade e Reset Moderno
+ */
+
+/* 1. Reset de Box Model e Tipografia */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Configurações de Renderização do Navegador */
+html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3. O "Body" Dark-Tech */
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: var(--font-main);
+    line-height: 1.5;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* 4. Reset de Elementos de Mídia (Performance LCP) */
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 5. Estilização de Links e Botões (Defaults de Marca) */
+a {
+    color: var(--text-link);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/* 6. Utilidades de Grid/Flex Básicas (Padrão de Layout) */
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+}
+
+/* 7. Typography Defaults */
+h1, h2, h3, h4 {
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--text-main);
+}
+
+code {
+    font-family: var(--font-code);
+    background: var(--bg-surface);
+    padding: 0.2rem 0.4rem;
+    border-radius: var(--radius-sm);
+    color: var(--accent);
+}
+
+/* 8. Buttons */
+.btn {
+    display: inline-block;
+    font-family: var(--font-code);
+    font-size: var(--fs-sm);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    text-align: center;
+}
+
+.btn--primary {
+    background: var(--primary);
+    color: var(--bg-main);
+    border: 1px solid var(--primary);
+    font-weight: 600;
+}
+
+.btn--primary:hover {
+    background: transparent;
+    color: var(--primary);
+    box-shadow: 0 0 12px rgba(0, 245, 212, 0.4);
+}
+
+.btn--outline {
+    background: transparent;
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+.btn--outline:hover {
+    background: var(--secondary);
+    color: var(--bg-main);
+    box-shadow: 0 0 12px rgba(156, 220, 254, 0.4);
+}
+
+/* 9. Code Inline */
+.code--inline {
+    font-family: var(--font-code);
+    background: var(--bg-surface);
+    padding: 0.2rem 0.4rem;
+    border-radius: var(--radius-sm);
+    color: var(--primary);
+}

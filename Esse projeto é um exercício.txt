@@ -1,0 +1,15 @@
+Esse projeto é um exercício proposto pelo curso que estou fazendo, o DevQuest 2.0 com IA drive. A proposta é desenvolver um site de e-commerce paulatinamente para  fins de assimilar os conceitos dos estudos. É um site para venda de Tênis e Sapatos Esportivos. Veja oo arquivo 'construcao-da-home-de-um-e-commerce-de-tenis-e-sapatos-esportivos.txt' para melhor entendimento. Eu pensei no nome Syntax Sneakers, para personalizar meu projeto e diferenciar da maioria, que certamente nem pensa no Design como eu penso. A referência é:
+O termo "Syntax Wear" refere-se principalmente a marcas de vestuário focadas na cultura de programação, tecnologia e estilo geek. Existem diferentes frentes sob esse nome, desde lojas de nicho com designs minimalistas até marcas focadas em anime e streetwear.
+Opções de Vestuário "Syntax"
+Diversas marcas e criadores utilizam o termo para descrever roupas que "falam" a linguagem dos desenvolvedores:
+Syntax Clothing (Internacional): Uma marca voltada para entusiastas de tecnologia e inovadores, oferecendo peças com designs minimalistas e focados no estilo de vida de quem "vive e respira código".
+SyntaXwear (Índia): Uma loja especializada em streetwear e anime, com coleções inspiradas em séries como Demon Slayer, Jujutsu Kaisen e Baki.
+Designs de Comunidade (Marketplaces): Em plataformas como TeePublic e Amazon, o termo é amplamente usado para camisetas e moletons com piadas de "Syntax Error", ícones de linguagens de programação (Python, JavaScript) e o famoso ponto e vírgula. 
+Produtos em Destaque
+Camiseta "The Ultimate Function Syntax": Peça popular em marketplaces que apresenta declarações de funções em cinco linguagens diferentes (Kotlin, Go, Swift, PHP e JavaScript).
+Moletons "Syntax Is My Superpower": Disponíveis na Amazon, focam em um design clássico com frases de autoafirmação para programadores.
+Moletons de Anime (SyntaXwear.in): Incluem modelos como o "ZORO Phantom" e o "Gojo Oversized Hoodie". syntaxwear.in
+ +2
+Diferenciação de Marca
+É importante notar que Syntax também é o nome de uma grande empresa de consultoria de tecnologia que fornece soluções de ERP (como SAP) para grandes varejistas de moda, mas ela não produz roupas diretamente; ela ajuda outras marcas de moda a otimizar suas operações.
+O nome Syntax Sneakers é uma jogada de mestre. Enquanto o mercado de "Syntax Wear" foca no básico (camisetas com piadas de ;), focar em Sneakers (tênis) eleva o ticket médio e entra em um nicho de colecionadores e entusiastas de streetwear que, no mundo tech, têm alto poder aquisitivo. Você não está vendendo apenas um calçado; está vendendo um "ativo de hardware" para os pés.

@@ -1,0 +1,79 @@
+/**
+ * SYNTAX SNEAKERS - Catalog Component
+ */
+
+.catalog {
+    padding: var(--space-6) 0;
+    background: var(--bg-main);
+}
+
+.catalog__header {
+    margin-bottom: var(--space-5);
+}
+
+.catalog__tag {
+    font-family: var(--font-code);
+    font-size: var(--fs-sm);
+    color: var(--primary);
+    display: block;
+    margin-bottom: var(--space-2);
+}
+
+.catalog__title {
+    font-family: var(--font-code);
+    font-size: var(--fs-xl);
+    color: var(--text-main);
+}
+
+.products__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-4);
+}
+
+/* Collections */
+.collections {
+    padding: var(--space-6) 0;
+    background: var(--bg-surface);
+}
+
+.collections__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-4);
+}
+
+.collection-card {
+    background: var(--bg-main);
+    border: var(--border-syntax);
+    border-radius: var(--radius-md);
+    padding: var(--space-5);
+    text-align: center;
+    transition: var(--transition-fast);
+}
+
+.collection-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 0 20px rgba(0, 245, 212, 0.1);
+}
+
+.collection-card__tag {
+    font-family: var(--font-code);
+    font-size: var(--fs-xs);
+    color: var(--accent);
+    display: block;
+    margin-bottom: var(--space-2);
+}
+
+.collection-card__title {
+    font-family: var(--font-code);
+    font-size: var(--fs-lg);
+    color: var(--text-main);
+    margin-bottom: var(--space-2);
+}
+
+.collection-card__description {
+    color: var(--text-muted);
+    font-size: var(--fs-sm);
+    margin-bottom: var(--space-4);
+}
