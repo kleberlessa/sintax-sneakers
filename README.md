@@ -87,3 +87,7 @@ git commit -m "refactor(css): extract button styles to global.css"
 2. Limite o título a 50 caracteres
 3. Corpo opcional após linha em branco
 4. Referencie issues quando aplicável: `Closes #123`
+
+## Documentação Adicional
+
+- [Relatório: Ollama no Desenvolvimento Full-Stack](./RELATORIO-OLLAMA-FULLSTACK.md) - Análise técnica sobre execução de LLMs locais com Ollama e as possibilidades para desenvolvimento Full-Stack.
