@@ -1,0 +1,94 @@
+/**
+ * SYNTAX SNEAKERS - About Section Component
+ */
+
+.about {
+    padding: var(--space-6) 0;
+    background: var(--bg-main);
+}
+
+.about__content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about__tag {
+    font-family: var(--font-code);
+    font-size: var(--fs-sm);
+    color: var(--primary);
+    display: block;
+    margin-bottom: var(--space-2);
+}
+
+.about__title {
+    font-family: var(--font-code);
+    font-size: var(--fs-xl);
+    color: var(--text-main);
+    margin-bottom: var(--space-5);
+}
+
+.about__text {
+    margin-bottom: var(--space-5);
+}
+
+.about__text p {
+    color: var(--text-muted);
+    font-size: var(--fs-base);
+    line-height: 1.8;
+    margin-bottom: var(--space-4);
+}
+
+.about__text p:last-child {
+    margin-bottom: 0;
+}
+
+.text--accent {
+    color: var(--accent);
+    font-family: var(--font-code);
+}
+
+.about__stats {
+    display: flex;
+    gap: var(--space-5);
+    padding: var(--space-5);
+    background: var(--bg-surface);
+    border: var(--border-syntax);
+    border-radius: var(--radius-md);
+}
+
+.stat {
+    text-align: center;
+    flex: 1;
+}
+
+.stat__value {
+    display: block;
+    font-family: var(--font-code);
+    font-size: var(--fs-2xl);
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: var(--space-1);
+}
+
+.stat__label {
+    font-family: var(--font-code);
+    font-size: var(--fs-xs);
+    color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+    .about__stats {
+        flex-direction: column;
+        gap: var(--space-4);
+    }
+
+    .stat {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .stat__value {
+        margin-bottom: 0;
+    }
+}

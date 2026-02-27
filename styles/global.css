@@ -1,0 +1,242 @@
+/* Estilos para itens do carrinho */
+.cart__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--bg-surface);
+}
+
+.cart__remove {
+    background: transparent;
+    border: none;
+    color: var(--error);
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: var(--space-2);
+}
+/**
+ * SYNTAX SNEAKERS - Global Styles
+ * Foco: Performance, Acessibilidade e Reset Moderno
+ */
+
+/* 1. Reset de Box Model e Tipografia */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Configurações de Renderização do Navegador */
+html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3. O "Body" Dark-Tech */
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: var(--font-main);
+    line-height: 1.5;
+    min-height: 100vh;
+    overflow-x: hidden;
+    /* Adições para o Sticky Footer funcionar: */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 4. Reset de Elementos de Mídia (Performance LCP) */
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 5. Estilização de Links e Botões (Defaults de Marca) */
+a {
+    color: var(--text-link);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/* 6. Utilidades de Grid/Flex Básicas (Padrão de Layout) */
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+}
+
+/* 7. Typography Defaults */
+h1, h2, h3, h4 {
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--text-main);
+}
+
+code {
+    font-family: var(--font-code);
+    background: var(--bg-surface);
+    padding: 0.2rem 0.4rem;
+    border-radius: var(--radius-sm);
+    color: var(--accent);
+}
+
+/* 8. Buttons */
+.btn {
+    display: inline-block;
+    font-family: var(--font-code);
+    font-size: var(--fs-sm);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    text-align: center;
+}
+
+.btn--primary {
+    background: var(--primary);
+    color: var(--bg-main);
+    border: 1px solid var(--primary);
+    font-weight: 600;
+}
+
+.btn--primary:hover {
+    background: transparent;
+    color: var(--primary);
+    box-shadow: 0 0 12px rgba(0, 245, 212, 0.4);
+}
+
+.btn--outline {
+    background: transparent;
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+.btn--outline:hover {
+    background: var(--secondary);
+    color: var(--bg-main);
+    box-shadow: 0 0 12px rgba(156, 220, 254, 0.4);
+}
+
+/* Feedback visual de sucesso para botões */
+.btn--success {
+    background: var(--success) !important;
+    color: var(--bg-main) !important;
+    border-color: var(--success) !important;
+}
+
+/* Modificadores de Botão (Atomic Design/BEM) */
+.btn--sm {
+        font-size: 0.85em;
+        padding: var(--space-1) var(--space-3);
+    }
+
+    .btn--full {
+        display: block;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+/* 9. Code Inline */
+.code--inline {
+    font-family: var(--font-code);
+    background: var(--bg-surface);
+    padding: 0.2rem 0.4rem;
+    border-radius: var(--radius-sm);
+    color: var(--primary);
+}
+
+/* 10. Toast Notifications Animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+}
+
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 10000;
+    animation: slideIn 0.3s ease-out;
+}
+
+.toast--success {
+    background: #00f5d4 !important;
+    color: #0b0e14;
+}
+
+.toast--error {
+    background: #ff6b6b !important;
+    color: #0b0e14;
+}
+
+.toast--warning {
+    background: #ffd93d !important;
+    color: #0b0e14;
+}
+
+.toast--exit {
+    animation: slideOut 0.3s ease-out !important;
+}
+
+/* 11. Cart Quantity Button Styles */
+.cart__qty-btn {
+    transition: all 0.2s ease-out !important;
+}
+
+.cart__qty-btn:hover:not(:disabled) {
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cart__qty-increase:hover:not(:disabled) {
+    background: var(--primary) !important;
+    color: var(--bg-main) !important;
+}
+
+.cart__qty-decrease:hover:not(:disabled) {
+    background: var(--text-muted) !important;
+    color: var(--bg-main) !important;
+}
+
+.cart__qty-btn:disabled {
+    cursor: not-allowed;
+}

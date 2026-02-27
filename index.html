@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Syntax Sneakers - O e-commerce de calçados para quem vive e respira código. Coleções exclusivas de sneakers tech.">
+
+    <title>Syntax Sneakers | Code Your Style</title>
+
+    <link rel="icon" type="image/svg+xml" href="src/favicon/logo_001-ciano-vibrante_.svg">
+    <link rel="icon" type="image/png" sizes="99x99" href="src/favicon/logo_001-ciano-vibrante_99x99.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/catalog.css">
+    <link rel="stylesheet" href="styles/product.css">
+    <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="styles/orders.css">
+    <link rel="stylesheet" href="styles/details.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="/" class="header__logo">
+                <span class="logo__syntax">&lt;</span>Syntax<span class="logo__brand">Sneakers</span><span class="logo__syntax"> /&gt;</span>
+            </a>
+
+            <nav class="header__nav" aria-label="Navegação Principal">
+                <ul class="header__menu">
+                    <li class="header__item">
+                        <a href="#catalog" class="header__link">.drop_atual()</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#collections" class="header__link">.colecoes()</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#orders" class="header__link">.meus_pedidos()</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#about" class="header__link">.sobre_nos()</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <button class="btn btn--cart" aria-label="Abrir carrinho de compras" id="cart-toggle">cart.view()</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <span class="hero__tag">// new_release.available_now</span>
+                    <h1 class="hero__title">SYNTAX <span class="text--primary">AIR_ERROR</span> v1.0</h1>
+                    <p class="hero__description">
+                        O sneaker projetado para suportar longas sessões de deploy.
+                        Sola amortecida com tecnologia <code class="code--inline">flex-box</code>.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#catalog" class="btn btn--primary">sudo buy --now</a>
+                        <a href="#about" class="btn btn--outline">view_source</a>
+                    </div>
+                </div>
+                <div class="hero__visual">
+                    <img src="https://raw.githubusercontent.com/kleberlessa/sintax-sneakers/main/src/image/syntax_air_error_v1.0.webp" alt="Syntax Sneakers" class="hero__image">
+                    <code style="color: var(--text-muted);">IMAGE.render(SNEAKER_01)</code>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catalog Section -->
+        <section id="catalog" class="catalog">
+            <div class="container">
+                <div class="catalog__header">
+                    <span class="catalog__tag">// products.available</span>
+                    <h2 class="catalog__title">.drop_atual()</h2>
+                </div>
+                <div class="products__grid">
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <img src="https://raw.githubusercontent.com/kleberlessa/sintax-sneakers/main/src/image/syntax_air_error_v1.0.webp" alt="AIR_ERROR v1.0" class="product-card__image">
+                        </div>
+                        <div class="product-card__content">
+                            <span class="product-card__tag">// bestseller</span>
+                            <h3 class="product-card__name">AIR_ERROR v1.0</h3>
+                            <p class="product-card__description">Sola flex-box amortecida para longas sessões de código.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">R$ 899,90</span>
+                                <button class="btn btn--sm btn--primary" data-action="add-to-cart">add_to_cart()</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <img src="https://raw.githubusercontent.com/kleberlessa/sintax-sneakers/main/src/image/syntax_null_pointer.webp" alt="NULL_POINTER" class="product-card__image">
+                        </div>
+                        <div class="product-card__content">
+                            <span class="product-card__tag">// new</span>
+                            <h3 class="product-card__name">NULL_POINTER</h3>
+                            <p class="product-card__description">Null não existe. Estilo é garantido.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">R$ 749,90</span>
+                                <button class="btn btn--sm btn--primary" data-action="add-to-cart">add_to_cart()</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <img src="https://raw.githubusercontent.com/kleberlessa/sintax-sneakers/main/src/image/syntax_stack_overflow.webp" alt="STACK_OVERFLOW" class="product-card__image">
+                        </div>
+                        <div class="product-card__content">
+                            <span class="product-card__tag">// limited</span>
+                            <h3 class="product-card__name">STACK_OVERFLOW</h3>
+                            <p class="product-card__description">Alta pilha de conforto. Overflow de estilo.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">R$ 1.299,90</span>
+                                <button class="btn btn--sm btn--primary" data-action="add-to-cart">add_to_cart()</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <img src="https://raw.githubusercontent.com/kleberlessa/sintax-sneakers/main/src/image/syntax_deploy_mode.webp" alt="DEPLOY_MODE" class="product-card__image">
+                        </div>
+                        <div class="product-card__content">
+                            <span class="product-card__tag">// new</span>
+                            <h3 class="product-card__name">DEPLOY_MODE</h3>
+                            <p class="product-card__description">Pronto para produção. Comfort in production.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">R$ 649,90</span>
+                                <button class="btn btn--sm btn--primary" data-action="add-to-cart">add_to_cart()</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collections Section -->
+        <section id="collections" class="collections">
+            <div class="container">
+                <div class="catalog__header">
+                    <span class="catalog__tag">// collections.loadAll()</span>
+                    <h2 class="catalog__title">.colecoes()</h2>
+                </div>
+                <div class="collections__grid">
+                    <div class="collection-card">
+                        <img src="https://raw.githubusercontent.com/kleberlessa/sintax-sneakers/main/src/image/syntax_air_error_v1.0.webp" alt="SYNTAX_ORIGINAL" class="collection-card__image">
+                        <div class="collection-card__content">
+                            <span class="collection-card__tag">// 2024</span>
+                            <h3 class="collection-card__title">SYNTAX_ORIGINAL</h3>
+                            <p class="collection-card__description">A coleção clássica que started tudo.</p>
+                            <a href="#catalog" class="btn btn--outline btn--sm">explore()</a>
+                        </div>
+                    </div>
+                    <div class="collection-card">
+                        <img src="https://raw.githubusercontent.com/kleberlessa/sintax-sneakers/main/src/image/syntax_null_pointer.webp" alt="ERROR_SERIES" class="collection-card__image">
+                        <div class="collection-card__content">
+                            <span class="collection-card__tag">// 2025</span>
+                            <h3 class="collection-card__title">NULL_POINTER</h3>
+                            <p class="collection-card__description">O void que faltava no seu visual.</p>
+                            <a href="#catalog" class="btn btn--outline btn--sm">explore()</a>
+                        </div>
+                    </div>
+                    <div class="collection-card">
+                        <img src="https://raw.githubusercontent.com/kleberlessa/sintax-sneakers/main/src/image/syntax_deploy_mode.webp" alt="API_COLLAB" class="collection-card__image">
+                        <div class="collection-card__content">
+                            <span class="collection-card__tag">// collab</span>
+                            <h3 class="collection-card__title">API_COLLAB</h3>
+                            <p class="collection-card__description">Integrações exclusivas de partners.</p>
+                            <a href="#catalog" class="btn btn--outline btn--sm">explore()</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order History Section -->
+        <section id="orders" class="orders">
+            <div class="container">
+                <div class="catalog__header">
+                    <span class="catalog__tag">// orderHistory.load()</span>
+                    <h2 class="catalog__title">.meus_pedidos()</h2>
+                </div>
+                <div id="orders-list" class="orders__list">
+                    <div class="orders__empty">
+                        <code style="color: var(--text-muted);">orders.find() // null</code>
+                        <p>Você ainda não realizou nenhum pedido</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about__content">
+                    <span class="about__tag">// about.load()</span>
+                    <h2 class="about__title">.sobre_nos()</h2>
+                    <div class="about__text">
+                        <p>
+                            <code class="code--inline">Syntax Sneakers</code> nasceu após um <code class="code--inline" >console.error</code> físico: Devs passam horas em loop, entre o café e o deploy, esquecendo que os pés também precisam de um ambiente estável e sem bugs.
+                        </p>
+                        <p>
+                            Enquanto o mercado de "Syntax Wear" foca no básico (camisetas com piadas de ponto e vírgula),
+                            nós elevamos o game com sneakers que são <span class="text--primary">ativos de hardware</span> para seus pés.
+                        </p>
+                        <p>
+                            Cada modelo é projetado com a mesma precisão de um código bem estruturado:
+                            <span class="text--accent">DRY</span> (Don't Repeat Comfort),
+                            <span class="text--accent">SOLID</span> (Sole Optimized for Long IDEV work),
+                            e sempre com <span class="text--primary">null</span> errors de estilo.
+                        </p>
+                    </div>
+                    <div class="about__stats">
+                        <div class="stat">
+                            <span class="stat__value">50K+</span>
+                            <span class="stat__label">devs_equipped</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__value">4.9</span>
+                            <span class="stat__label">rating_stars</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__value">∞</span>
+                            <span class="stat__label">coffee_sips</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Sidebar -->
+    <aside class="cart" id="cart">
+        <div class="cart__header">
+            <h3 class="cart__title">cart.items()</h3>
+            <button class="cart__close" aria-label="Fechar carrinho" id="cart-close">×</button>
+        </div>
+        <div class="cart__content">
+            <div class="cart__empty">
+                <code style="color: var(--text-muted);">cart.isEmpty()</code>
+                <p>Nenhum item no carrinho</p>
+            </div>
+        </div>
+        <div class="cart__footer">
+            <div class="cart__total">
+                <span>Total:</span>
+                <span class="cart__total-value">R$ 0,00</span>
+            </div>
+            <button class="btn btn--primary btn--full">checkout()</button>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">
+                &copy; 2026 Syntax Sneakers. All rights reserved.
+                <code class="footer__version">v1.0.0-stable</code>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

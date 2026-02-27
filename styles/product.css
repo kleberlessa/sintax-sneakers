@@ -1,0 +1,80 @@
+/**
+ * SYNTAX SNEAKERS - Product Card Component
+ */
+
+.product-card {
+    background: var(--bg-surface);
+    border: var(--border-syntax);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: var(--transition-fast);
+}
+
+.product-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.product-card__image {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-main);
+    border-bottom: var(--border-syntax);
+    overflow: hidden;
+}
+
+.product-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-card__content {
+    padding: var(--space-4);
+}
+
+.product-card__tag {
+    font-family: var(--font-code);
+    font-size: var(--fs-xs);
+    color: var(--primary);
+    display: block;
+    margin-bottom: var(--space-2);
+}
+
+.product-card__name {
+    font-family: var(--font-code);
+    font-size: var(--fs-lg);
+    color: var(--text-main);
+    margin-bottom: var(--space-2);
+}
+
+.product-card__description {
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+    margin-bottom: var(--space-3);
+}
+
+.product-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card__price {
+    font-family: var(--font-code);
+    font-size: var(--fs-lg);
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.btn--sm {
+    padding: var(--space-1) var(--space-3);
+    font-size: var(--fs-xs);
+}
+
+.btn--full {
+    width: 100%;
+}

@@ -1,0 +1,77 @@
+/**
+ * SYNTAX SNEAKERS - Header Component
+ */
+
+.header {
+    background-color: var(--bg-surface);
+    border-bottom: var(--border-syntax);
+    padding: var(--space-3) 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-family: var(--font-code);
+    font-weight: 800;
+    font-size: var(--fs-lg);
+    color: var(--text-main);
+}
+
+.logo__syntax {
+    color: var(--accent);
+}
+
+.logo__brand {
+    color: var(--primary);
+}
+
+.header__menu {
+    display: flex;
+    gap: var(--space-4);
+}
+
+.header__link {
+    font-family: var(--font-code);
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+}
+
+.header__link:hover {
+    color: var(--secondary);
+    text-shadow: 0 0 8px var(--secondary);
+}
+
+.header__actions {
+    display: flex;
+    gap: var(--space-3);
+}
+
+.btn--cart {
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-code);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.btn--cart:hover {
+    background: var(--primary);
+    color: var(--bg-main);
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .header__menu {
+        display: none;
+    }
+}
