@@ -91,3 +91,4 @@ git commit -m "refactor(css): extract button styles to global.css"
 ## Documentação Adicional
 
 - [Relatório: Ollama no Desenvolvimento Full-Stack](./RELATORIO-OLLAMA-FULLSTACK.md) - Análise técnica sobre execução de LLMs locais com Ollama e as possibilidades para desenvolvimento Full-Stack.
+# Sincronização Automática Ativa (2026)
